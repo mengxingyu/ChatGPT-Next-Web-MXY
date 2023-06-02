@@ -39,18 +39,18 @@ export default function RootLayout({
       <body>
         <div
           style={{
-            height: "100px",
-            backgroundColor: "#fff",
-          }}
-        ></div>
-        <div
-          style={{
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
           }}
         >
+          <div
+            style={{
+              height: "100px",
+              backgroundColor: "#fff",
+            }}
+          ></div>
           {children}
           <footer
             style={{
