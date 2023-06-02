@@ -7,8 +7,8 @@ import { getBuildConfig } from "./config/build";
 const buildConfig = getBuildConfig();
 
 export const metadata = {
-  title: "ChatGPT Next Web",
-  description: "Your personal ChatGPT Chat Bot.",
+  title: "星星星星宇的私人Ai助手",
+  description: "Starain personal ChatGPT Chat Bot.",
   viewport: {
     width: "device-width",
     initialScale: 1,
@@ -19,7 +19,7 @@ export const metadata = {
     { media: "(prefers-color-scheme: dark)", color: "#151515" },
   ],
   appleWebApp: {
-    title: "ChatGPT Next Web",
+    title: "星星星星宇的私人Ai助手",
     statusBarStyle: "default",
   },
 };
@@ -36,7 +36,18 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest"></link>
         <script src="/serviceWorkerRegister.js" defer></script>
       </head>
-      <body>{children}</body>
+      <body>
+      <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center",paddingTop: "100px" }}>
+      {children}
+        <div>
+          <p>备案号：粤ICP备2023015959号-1</p>
+        <p>
+          备案号链接：
+          <a href="https://beian.miit.gov.cn/">https://beian.miit.gov.cn/</a>
+        </p>
+        </div>
+      </div>
+      </body>
     </html>
   );
 }
