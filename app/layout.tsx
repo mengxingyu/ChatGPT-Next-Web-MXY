@@ -47,10 +47,9 @@ export default function RootLayout({
           }}
         >
           {children}
-
           <footer
             style={{
-              backgroundColor: "#F5F5F5",
+              backgroundColor: "transparent",
               height: "60px",
               lineHeight: "60px",
               textAlign: "center",
