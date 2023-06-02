@@ -2,6 +2,8 @@
 import "./styles/globals.scss";
 import "./styles/markdown.scss";
 import "./styles/highlight.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlobeAsia } from "@fortawesome/free-solid-svg-icons";
 import { getBuildConfig } from "./config/build";
 
 const buildConfig = getBuildConfig();
@@ -37,16 +39,32 @@ export default function RootLayout({
         <script src="/serviceWorkerRegister.js" defer></script>
       </head>
       <body>
-      <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center",marginTop: "100px" }}>
-      {children}
-        <div>
-          <p>备案号：粤ICP备2023015959号-1</p>
-        <p>
-          备案号链接：
-          <a href="https://beian.miit.gov.cn/">https://beian.miit.gov.cn/</a>
-        </p>
-        </div>
-      </div>
+        {children}
+        <footer
+          style={{
+            backgroundColor: "#F5F5F5",
+            height: "60px",
+            lineHeight: "60px",
+            textAlign: "center",
+            fontSize: "14px",
+            color: "#999",
+          }}
+        >
+          <FontAwesomeIcon
+            icon={faGlobeAsia}
+            style={{ fontSize: "18px", marginRight: "5px", color: "#999" }}
+          />
+          <span>
+            <a
+              href="https://beian.miit.gov.cn/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#999", textDecoration: "none" }}
+            >
+              备案号：粤ICP备2023015959号-1
+            </a>
+          </span>
+        </footer>
       </body>
     </html>
   );
