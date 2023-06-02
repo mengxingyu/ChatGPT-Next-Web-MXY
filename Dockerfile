@@ -1,7 +1,7 @@
 FROM node:18-alpine AS base
 
 FROM base AS deps
-RUN npm install --save @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+
 
 RUN apk add --no-cache libc6-compat
 

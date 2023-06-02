@@ -2,8 +2,6 @@
 import "./styles/globals.scss";
 import "./styles/markdown.scss";
 import "./styles/highlight.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGlobeAsia } from "@fortawesome/free-solid-svg-icons";
 import { getBuildConfig } from "./config/build";
 
 const buildConfig = getBuildConfig();
@@ -50,10 +48,6 @@ export default function RootLayout({
             color: "#999",
           }}
         >
-          <FontAwesomeIcon
-            icon={faGlobeAsia}
-            style={{ fontSize: "18px", marginRight: "5px", color: "#999" }}
-          />
           <span>
             <a
               href="https://beian.miit.gov.cn/"
