@@ -37,15 +37,20 @@ export default function RootLayout({
         <script src="/serviceWorkerRegister.js" defer></script>
       </head>
       <body>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            marginTop: "100px",
-          }}
-        >
+        <div style={{ position: "relative" }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100px",
+            }}
+          ></div>
           {children}
           <footer
             style={{
@@ -62,7 +67,7 @@ export default function RootLayout({
                 href="https://beian.miit.gov.cn/"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: "#999", textDecoration: "none" }}
+                style={{ color: "#28282e", textDecoration: "none" }}
               >
                 备案号：粤ICP备2023015959号-1
               </a>
