@@ -47,28 +47,29 @@ export default function RootLayout({
           }}
         >
           {children}
+
+          <footer
+            style={{
+              backgroundColor: "#F5F5F5",
+              height: "60px",
+              lineHeight: "60px",
+              textAlign: "center",
+              fontSize: "14px",
+              color: "#999",
+            }}
+          >
+            <span>
+              <a
+                href="https://beian.miit.gov.cn/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "#999", textDecoration: "none" }}
+              >
+                备案号：粤ICP备2023015959号-1
+              </a>
+            </span>
+          </footer>
         </div>
-        <footer
-          style={{
-            backgroundColor: "#F5F5F5",
-            height: "60px",
-            lineHeight: "60px",
-            textAlign: "center",
-            fontSize: "14px",
-            color: "#999",
-          }}
-        >
-          <span>
-            <a
-              href="https://beian.miit.gov.cn/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "#999", textDecoration: "none" }}
-            >
-              备案号：粤ICP备2023015959号-1
-            </a>
-          </span>
-        </footer>
       </body>
     </html>
   );
