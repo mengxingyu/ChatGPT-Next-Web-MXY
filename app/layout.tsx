@@ -37,7 +37,17 @@ export default function RootLayout({
         <script src="/serviceWorkerRegister.js" defer></script>
       </head>
       <body>
-        {children}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "100px",
+          }}
+        >
+          {children}
+        </div>
         <footer
           style={{
             backgroundColor: "#F5F5F5",
