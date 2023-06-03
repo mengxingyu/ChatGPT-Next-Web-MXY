@@ -122,14 +122,17 @@ export function SideBar(props: { className?: string }) {
         <div className={styles["sidebar-title"]}>ChatGPT Next</div>
         <div className={styles["sidebar-sub-title"]}>
           欢迎关注微信公众号:
-         <span style={{
-            backgroundImage: "linear-gradient(to right, #FFC300, #FF5733, #C70039, #900C3F, #581845)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            fontSize: "20px" // 设置字体大小
-          }}>
-          程序员星宇
-        </span>
+          <span
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, #FFC300, #FF5733, #C70039, #900C3F, #581845)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              fontSize: "20px", // 设置字体大小
+            }}
+          >
+            程序员星宇
+          </span>
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
@@ -181,11 +184,11 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
           </div>
-          <div className={styles["sidebar-action"]}>
-            <a href={REPO_URL} target="_blank">
-              <IconButton icon={<GithubIcon />} shadow />
-            </a>
-          </div>
+          {/*<div className={styles["sidebar-action"]}>*/}
+          {/*  <a href={REPO_URL} target="_blank">*/}
+          {/*    <IconButton icon={<GithubIcon />} shadow />*/}
+          {/*  </a>*/}
+          {/*</div>*/}
         </div>
         <div>
           <IconButton
