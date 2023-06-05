@@ -177,10 +177,7 @@ const cn = {
   Store: {
     DefaultTopic: "新的聊天",
     BotHello:
-      "前往公众号：" +
-      '<a style="font-weight: bold;">程序员星宇</a> 回复密码免费获取密码，然后点击左下角<a style="font-weight: bold;" href="/settings">设置</a>按钮输入密码后解锁免费使用。<br/><br/>' +
-      "提问：能免费用GPT-4吗？<br/>回答：太贵了，一次对话一块钱，日常用3.5足够，后续会开放专业用户的GPT-4充值。<br/><br/>常见问题与使用说明" +
-      '<a href="#">点击查看</a>Starain产品简介。<br/><br/>卡顿或无响应？可能是用户量太大，点<a href="#">这里</a>获得独立账号KEY使用。',
+      '前往公众号：<a style="font-weight: bold;color: #00BFFF; text-decoration: none;">程序员星宇</a> 回复密码免费获取密码，然后点击左下角<a style="color: #00BFFF; text-decoration: none; font-weight: bold;" href="/setting">设置</a>按钮输入密码后解锁免费使用。<br/><br/>提问：能免费用GPT-4吗？<br/>回答：太贵了，一次对话一块钱，日常用3.5足够，后续会开放专业用户的GPT-4充值。<br/><br/>常见问题与使用说明<a href="#">点击查看</a>Starain产品简介。<br/><br/>卡顿或无响应？可能是用户量太大，点<a href="#">这里</a>获得独立账号KEY使用。',
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
