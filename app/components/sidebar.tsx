@@ -119,7 +119,7 @@ export function SideBar(props: { className?: string }) {
       }`}
     >
       <div className={styles["sidebar-header"]}>
-        <div className={styles["sidebar-title"]}>ChatGPT Next</div>
+        <div className={styles["sidebar-title"]}>Starain’s AI ChatGPT</div>
         <div className={styles["sidebar-sub-title"]}>
           欢迎关注微信公众号:
           <span

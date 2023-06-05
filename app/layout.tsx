@@ -7,7 +7,7 @@ import { getBuildConfig } from "./config/build";
 const buildConfig = getBuildConfig();
 
 export const metadata = {
-  title: "星星星星宇的私人Ai助手",
+  title: "星星星星宇的私人AI助手",
   description: "Starain personal ChatGPT Chat Bot.",
   viewport: {
     width: "device-width",
