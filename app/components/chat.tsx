@@ -877,6 +877,28 @@ export function Chat() {
             onClick={() => doSubmit(userInput)}
           />
         </div>
+
+        <footer
+          style={{
+            backgroundColor: "transparent",
+            height: "60px",
+            lineHeight: "60px",
+            textAlign: "center",
+            fontSize: "14px",
+            color: "#999",
+          }}
+        >
+          <span>
+            <a
+              href="https://beian.miit.gov.cn/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#28282e", textDecoration: "none" }}
+            >
+              备案号：粤ICP备2023015959号-1
+            </a>
+          </span>
+        </footer>
       </div>
 
       {showExport && (
