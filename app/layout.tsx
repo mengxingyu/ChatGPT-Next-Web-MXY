@@ -39,8 +39,6 @@ export default function RootLayout({
       <body>
         <div
           style={{
-            display: "flex",
-            flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
           }}
