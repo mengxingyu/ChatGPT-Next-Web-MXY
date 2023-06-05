@@ -878,7 +878,7 @@ export function Chat() {
           />
         </div>
 
-        <footer
+        <div
           style={{
             backgroundColor: "transparent",
             height: "60px",
@@ -898,7 +898,7 @@ export function Chat() {
               备案号：粤ICP备2023015959号-1
             </a>
           </span>
-        </footer>
+        </div>
       </div>
 
       {showExport && (
