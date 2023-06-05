@@ -177,7 +177,7 @@ const cn = {
   Store: {
     DefaultTopic: "新的聊天",
     BotHello:
-      "有什么可以帮你的吗(有疑问欢迎留言微信公众号:<strong>程序员星宇</strong>,或添加私人微信<strong>MyFerdinand</strong>)?",
+      "有什么可以帮你的吗(有疑问欢迎留言微信公众号:<strong>程序员星宇</strong>,或添加私人微信MyFerdinand)?",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
