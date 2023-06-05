@@ -36,24 +36,7 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest"></link>
         <script src="/serviceWorkerRegister.js" defer></script>
       </head>
-      <body>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <div
-            style={{
-              height: "100px",
-              backgroundColor: "#fff",
-            }}
-          ></div>
-          {children}
-        </div>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
